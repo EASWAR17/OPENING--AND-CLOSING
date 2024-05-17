@@ -1,10 +1,14 @@
 
+# OPENING AND CLOSING
+
 ## Aim
 To implement Opening and Closing using Python and OpenCV.
 
 ## Software Required
+
 1. Anaconda - Python 3.7
 2. OpenCV
+
 ## Algorithm:
 ### Step1:
 Import the necessary packages
@@ -22,20 +26,20 @@ Use Opening operation
 Use Closing Operation
  
 ## Program:
-```
-Developed by : Easwar J
-Register no : 212221230024
-```
+#### Developed by: Easwar J
+#### Register.no:212221240024
 ## Import the necessary packages
-```
+
+```python
 import cv2
 import numpy as np
 from matplotlib import pyplot as plt
 ```
 ## Create the Text using cv2.putText
-```
+
+```python
 # Read the color image
-input_image_path = 'Dhoni.jpg'
+input_image_path = 'peacock.jpg'
 color_image = cv2.imread(input_image_path)
 
 # Convert the color image to grayscale
@@ -63,7 +67,8 @@ closing = cv2.morphologyEx(edges, cv2.MORPH_CLOSE, kernel)
 
 
 ## Create the structuring element
-```
+
+```python
 plt.figure(figsize=(15, 10))
 plt.subplot(2, 3, 1)
 plt.imshow(cv2.cvtColor(color_image, cv2.COLOR_BGR2RGB))
@@ -73,7 +78,8 @@ plt.axis('on')
 
 
 ## Use Opening operation
-```
+
+```python
 plt.subplot(2, 3, 2)
 plt.imshow(opening, cmap='gray')
 plt.title('Opening')
@@ -83,7 +89,8 @@ plt.axis('on')
 
 
 ## Use Closing Operation
-```
+
+```python
 plt.subplot(2, 3, 3)
 plt.imshow(closing, cmap='gray')
 plt.title('Closing')
@@ -95,20 +102,15 @@ plt.show()
 ## Output:
 ### Display the input Image
 
-
-![dip-1](https://github.com/Keerthanasampathkumar/OPENING--AND-CLOSING/assets/119477890/9bbf4d19-2c2e-4b29-a416-537ca04e3cc4)
-
+![oi](https://github.com/JananiSoundararajan/OPENING--AND-CLOSING/assets/119477549/714739ae-6d72-4dd0-9fb7-71af939f2f2b)
 
 ### Display the result of Opening
 
-![dip-2](https://github.com/Keerthanasampathkumar/OPENING--AND-CLOSING/assets/119477890/2676a2a3-7146-4b08-a1f2-13bf703313fd)
-
-
+![opi](https://github.com/JananiSoundararajan/OPENING--AND-CLOSING/assets/119477549/ed78bee0-8402-4702-91d5-af73fd030af4)
 
 ### Display the result of Closing
 
-![dip-3](https://github.com/Keerthanasampathkumar/OPENING--AND-CLOSING/assets/119477890/4d4e3db2-8976-42f3-9dc7-bc6ff94060b5)
-
+![ci](https://github.com/JananiSoundararajan/OPENING--AND-CLOSING/assets/119477549/288a27cf-4cdf-459f-8fb9-504eecce1362)
 
 ## Result
 Thus the Opening and Closing operation is used in the image using python and OpenCV.
